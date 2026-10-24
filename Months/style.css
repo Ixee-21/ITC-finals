@@ -1,6 +1,6 @@
 ul {list-style-type: none;}
 body {font-family: Verdana, sans-serif;}
-
+a {text-decoration: none;}
 /* Month header */
 .month {
   padding: 70px 20px;
@@ -25,14 +25,42 @@ body {font-family: Verdana, sans-serif;}
 /* Previous button inside month header */
 .month .prev {
   float: left;
-  padding-top: 10px;
+  background-color: #007BFF;
+  color: white;
+  padding: 11px 22px;
+  font-size: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  /* Transition for smooth movement*/
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
+
+/* Prev button hover effect */
+.prev:hover {
+            background-color: #0056b3; /* Darkens the button background */
+            transform: scale(1.05);     /* Scales the button up slightly */
+        }
 
 /* Next button */
 .month .next {
   float: right;
-  padding-top: 10px;
+  background-color: #007BFF;
+  color: white;
+  padding: 11px 22px;
+  font-size: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  /* Transition for smooth movement*/
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
+
+/* Next button hover effect */
+.next:hover {
+            background-color: #0056b3; /* Darkens the button background */
+            transform: scale(1.05);     /* Scales the button up slightly */
+        }
 
 /* Weekdays (Mon-Sun) */
 .weekdays {
@@ -70,4 +98,11 @@ body {font-family: Verdana, sans-serif;}
   padding: 5px;
   background: #1abc9c;
   color: white !important
+}
+
+/* button container */
+.button {
+display: flex;
+  justify-content: center;
+  align-items: center;     
 }
