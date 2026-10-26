@@ -102,6 +102,11 @@ a {text-decoration: none;}
   background: #fafafa;
 }
 
+.days button.selected {
+  background: #fafafa;
+  outline: 2px solid #1abc9c;
+}
+
 .days > .day-cell {
   position: relative;
   width: 100%;
@@ -141,6 +146,15 @@ a {text-decoration: none;}
 
 .days .empty {
   visibility: hidden;
+}
+
+.selected-date-info {
+  margin: 20px 10px;
+  padding: 12px;
+  border-radius: 4px;
+  background: #eee;
+  color: #333;
+  text-align: center;
 }
 
 /* Highlight the "current" day */
