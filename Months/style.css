@@ -22,8 +22,10 @@ a {text-decoration: none;}
   letter-spacing: 3px;
 }
 
+
 /* Previous button inside month header */
-.month .prev {
+.month .prev a{
+  display: block;
   float: left;
   background-color: #007BFF;
   color: white;
@@ -37,13 +39,13 @@ a {text-decoration: none;}
 }
 
 /* Prev button hover effect */
-.prev:hover {
+.prev a:hover {
             background-color: #0056b3; /* Darkens the button background */
             transform: scale(1.05);     /* Scales the button up slightly */
         }
 
 /* Next button */
-.month .next {
+.month .next a{
   float: right;
   background-color: #007BFF;
   color: white;
@@ -57,7 +59,7 @@ a {text-decoration: none;}
 }
 
 /* Next button hover effect */
-.next:hover {
+.next a:hover {
             background-color: #0056b3; /* Darkens the button background */
             transform: scale(1.05);     /* Scales the button up slightly */
         }
