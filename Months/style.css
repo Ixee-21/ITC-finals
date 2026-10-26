@@ -64,13 +64,14 @@ a {text-decoration: none;}
             transform: scale(1.05);     /* Scales the button up slightly */
         }
 
-/* Weekdays (Mon-Sun) */
+/* Weekdays (Sun-Sat) */
 .weekdays {
   margin: 0;
   padding: 10px 0;
   background-color:#ddd;
 }
 
+/* Aligns labels (Sun-Sat) correctly*/
 .weekdays li {
   display: inline-block;
   width: 13.6%;
@@ -85,6 +86,7 @@ a {text-decoration: none;}
   margin: 0;
 }
 
+/*clickable area to access button on days and how it looks*/
 .days button {
   width: 100%;
   padding: 8px 0;
@@ -97,21 +99,20 @@ a {text-decoration: none;}
   cursor: pointer;
 }
 
+/*color of highlight when hovered*/
 .days button:hover,
 .days button:focus {
   background: #fafafa;
+  outline: 2px solid #06a147;
 }
 
-.days button.selected {
-  background: #fafafa;
-  outline: 2px solid #1abc9c;
-}
-
+/*makes sure that day positions are correct*/
 .days > .day-cell {
   position: relative;
   width: 100%;
 }
 
+/*makes info pop up during hover*/
 .days .tooltip {
   position: absolute;
   bottom: calc(100% + 8px);
@@ -128,12 +129,14 @@ a {text-decoration: none;}
   transition: opacity 0.2s ease;
 }
 
+/*makes button highlight when hovering or focus*/
 .days > .day-cell:hover .tooltip,
 .days > .day-cell:focus-within .tooltip {
   visibility: visible;
   opacity: 1;
 }
 
+/*makes sure that days and the weekdays are alligned in their respective columns*/
 .weekdays,
 .days {
   display: grid;
@@ -144,17 +147,9 @@ a {text-decoration: none;}
   text-align: center;
 }
 
+/*empty spaces so that dates are aligned to their correct days*/
 .days .empty {
   visibility: hidden;
-}
-
-.selected-date-info {
-  margin: 20px 10px;
-  padding: 12px;
-  border-radius: 4px;
-  background: #eee;
-  color: #333;
-  text-align: center;
 }
 
 /* Highlight the "current" day */
@@ -169,4 +164,14 @@ a {text-decoration: none;}
 display: flex;
   justify-content: center;
   align-items: center;     
+}
+
+/*Info at the bottom of the page*/
+.selected-date-info {
+  margin: 20px 10px;
+  padding: 12px;
+  border-radius: 4px;
+  background: #eee;
+  color: #333;
+  text-align: center;
 }
