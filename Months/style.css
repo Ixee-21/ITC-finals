@@ -1,6 +1,22 @@
 ul {list-style-type: none;}
 body {font-family: Verdana, sans-serif;}
 a {text-decoration: none;}
+
+.title h1{
+  font-size: 20px;
+}
+
+.title h2{
+  font-size: 16px;
+}
+
+/* Title Header*/
+.title {
+  padding: 5px 5px;
+  background: #ff9317;
+  text-align: center;
+}
+
 /* Month header */
 .month {
   padding: 70px 20px;
