@@ -194,3 +194,22 @@ display: flex;
 /*BACKGROUND COLOR OF THE PAGE*/
 :root{--bg:#ffe3c9;color-scheme:light}
 html,body{height:100%;margin:0;background:var(--bg)}
+
+/*BUTTONS*/
+.Months {
+  display: grid;
+  grid-template-columns: repeat(4, 150 px);
+  grid-template-rows: repeat(3, 50 px);
+  gap: 15 px;
+}
+.rectangle {
+  width: 150 px;
+  height: 50 px;
+  background-color: lightblue;
+  border: 2 px solid black;
+  border-radius: 15 px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
