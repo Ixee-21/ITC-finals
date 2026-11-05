@@ -196,20 +196,38 @@ display: flex;
 html,body{height:100%;margin:0;background:var(--bg)}
 
 /*BUTTONS*/
-.Months {
+.months {
   display: grid;
-  grid-template-columns: repeat(4, 150 px);
-  grid-template-rows: repeat(3, 50 px);
-  gap: 15 px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-rows: repeat(3, auto);
+  gap: 15px;
+  padding-right: 25px;
 }
 .rectangle {
-  width: 150 px;
-  height: 50 px;
-  background-color: lightblue;
-  border: 2 px solid black;
-  border-radius: 15 px;
   display: flex;
+  position: relative;
+  box-sizing: border-box;
+  min-height: 100px;
+  padding: 10px;
+  margin: 0;
+  background-color: lightblue;
+  border: 2px solid black;
+  border-radius: 15px;
   justify-content: center;
   align-items: center;
+  text-align: center;
+}
 
+.months .rectangle > nav {
+  display: flex;
+  position: absolute;
+  inset: -2px;
+}
+.months .rectangle > nav > a {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: inherit;
 }
