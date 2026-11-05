@@ -191,3 +191,6 @@ display: flex;
   color: #333;
   text-align: center;
 }
+/*BACKGROUND COLOR OF THE PAGE*/
+:root{--bg:#ffe3c9;color-scheme:light}
+html,body{height:100%;margin:0;background:var(--bg)}
