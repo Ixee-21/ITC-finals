@@ -214,7 +214,6 @@ html,body {
 }
 
 /*BUTTONS*/
-<<<<<<< Updated upstream
 .months_this {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -223,7 +222,6 @@ html,body {
   padding-right: 25px;
 }
 .rectangle {
-=======
 .months {
   display: grid;
   grid-template-columns: repeat(4, 150px);
@@ -236,7 +234,6 @@ html,body {
   background-color: lightblue;
   border: 2px solid black;
   border-radius: 15px;
->>>>>>> Stashed changes
   display: flex;
   position: relative;
   box-sizing: border-box;
