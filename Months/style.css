@@ -12,15 +12,26 @@ a {text-decoration: none;}
 
 /* Title Header*/
 .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 5px 5px;
+  height: 50px;
   background: #ff9317;
   text-align: center;
 }
 
+.title a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
+
 /* Month header */
 .month {
-  padding: 70px 20px;
-  width: 97.35%;
+  box-sizing: border-box;
+  padding: 70px 25px;
+  width: 100%;
   background: #1abc9c;
   text-align: center;
 }
@@ -156,7 +167,7 @@ a {text-decoration: none;}
 .weekdays,
 .days {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(7, minmax(0, 1fr));
   list-style: none;
   padding: 10px;
   place-items: center;
@@ -166,6 +177,8 @@ a {text-decoration: none;}
 /*empty spaces so that dates are aligned to their correct days*/
 .days .empty {
   visibility: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 /* Highlight the "current" day */
@@ -191,9 +204,14 @@ display: flex;
   color: #333;
   text-align: center;
 }
+
 /*BACKGROUND COLOR OF THE PAGE*/
 :root{--bg:#ffe3c9;color-scheme:light}
-html,body{height:100%;margin:0;background:var(--bg)}
+html,body {
+  height:100%;
+  margin:0;
+  background:var(--bg)
+}
 
 /*BUTTONS*/
 .months_this {
