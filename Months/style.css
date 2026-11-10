@@ -241,7 +241,6 @@ html,body {
   text-align: center;
   font-size: 20px;
 }
-
 .months_this .rectangle > nav {
   display: flex;
   position: absolute;
@@ -263,7 +262,6 @@ html,body {
   gap: 15px;
   padding-right: 25px;
 }
-
 .months_next .rectangle > nav {
   display: flex;
   position: absolute;
@@ -276,4 +274,74 @@ html,body {
   justify-content: center;
   text-decoration: none;
   color: inherit;
+}
+#homepage{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  background: linear-gradient(
+    135deg,
+    #102c72 0%,
+    #2755cf 60%,
+    #ffe3c9 120%
+  );
+  color:white;
+}
+
+.hero-content h1{
+  font-size:90px;
+  font-weight:800;
+  letter-spacing:2px;
+  margin-bottom:15px;
+}
+
+.hero-content p{
+  font-size:24px;
+  color:#fff4e6;
+  margin-bottom:35px;
+}
+
+/* enter button */
+.enter-btn{
+  display:inline-block;
+  padding:16px 42px;
+  background:#ff9317;
+  color:white;
+  font-size:18px;
+  font-weight:bold;
+  border-radius:999px;
+  text-decoration:none;
+  transition:all .3s ease;
+}
+
+/* effects for the enter button */
+.enter-btn:hover{
+  background:#ff7a00;
+  transform:translateY(-3px);
+  box-shadow:0 1
+  body;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+/* for the fade out transition */
+body{
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+body.fade-out{
+    opacity: 0;
+}
+
+/* for the fade in transition */
+@keyframes fadeIn{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
 }
